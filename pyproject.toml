@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rugby-vision-analyst"
+version = "0.1.0"
+description = "MVP local de detección y tracking visual de personas en vídeo de rugby"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+  "av>=14,<17",
+  "lap>=0.5.12,<1",
+  "numpy>=1.26,<3",
+  "opencv-python>=4.10,<5",
+  "PyYAML>=6,<7",
+  "ultralytics>=8.3,<9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+rugby = "rugby_vision.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+data/raw/*
+data/processed/*
+data/exports/*
+models/*.pt
+*.pt
+smoke_input.mp4
+person_smoke.mp4
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/exports/.gitkeep

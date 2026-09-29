@@ -1,0 +1,9 @@
+detection:
+  model: yolo11n.pt
+  confidence: 0.35
+  image_size: 640
+tracking:
+  tracker: bytetrack.yaml
+output:
+  directory: data/processed
+  codec: mp4v
