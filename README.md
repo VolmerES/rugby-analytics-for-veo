@@ -62,3 +62,7 @@ Si el MP4 no se abre, revisa `inspect-video` y el codec. Si el vídeo de salida 
 ```
 
 Tras probar un fragmento real, revisaremos falsos positivos, jugadores perdidos, cambios de ID y velocidad de procesamiento. Solo con esa evidencia decidiremos si ajustar el detector/tracker o introducir clasificación por equipo y reidentificación.
+
+## Licencia
+
+© 2026 Juan Bautista Delorme Pinedo. Bajo licencia [GNU AGPL v3](LICENSE), la misma de [Ultralytics](https://github.com/ultralytics/ultralytics) (YOLO11), de la que depende.
